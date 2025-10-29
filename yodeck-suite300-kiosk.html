@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suite 300</title>
+  <style>
+    /* Kiosk-friendly, high-contrast theme */
+    html, body {
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, Helvetica, sans-serif;
+      background: #0b0c10;
+      color: #f5f7fa;
+    }
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      background: linear-gradient(180deg, rgba(21,22,29,0.98) 0%, rgba(21,22,29,0.94) 100%);
+      backdrop-filter: blur(6px);
+      border-bottom: 2px solid #2b88ff;
+      padding: 24px 4vw 18px;
+      text-align: center;
+    }
+    .title {
+      font-size: 56px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin: 0 0 6px;
+      text-transform: uppercase;
+    }
+    .accent {
+      width: 120px;
+      height: 6px;
+      margin: 8px auto 0;
+      border-radius: 6px;
+      background: #2b88ff;
+      box-shadow: 0 0 18px rgba(43,136,255,0.6);
+    }
+    .wrap {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px 4vw 48px;
+    }
+    /* Grouped list layout: 3 responsive columns */
+    .grid {
+      column-count: 3;
+      column-gap: 48px;
+    }
+    @media (max-width: 1200px) {
+      .grid { column-count: 2; }
+    }
+    @media (max-width: 820px) {
+      .grid { column-count: 1; }
+    }
+    .group {
+      break-inside: avoid;
+      margin: 18px 0 24px;
+      border-radius: 16px;
+      padding: 6px 16px 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    }
+    .group-header {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #b9d6ff;
+      margin: 8px 0 6px;
+    }
+    .group ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .group li {
+      font-size: 28px;
+      line-height: 1.5;
+      padding: 6px 0;
+      border-bottom: 1px dashed rgba(255,255,255,0.08);
+    }
+    .group li:last-child {
+      border-bottom: none;
+    }
+    /* Optional gentle auto-scroll for very long lists on kiosks */
+    .auto-scroll {
+      height: calc(100vh - 110px);
+      overflow: hidden;
+      position: relative;
+    }
+    .scroll-inner {
+      position: absolute;
+      width: 100%;
+      animation: scrollY 45s linear infinite;
+    }
+    @keyframes scrollY {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20%); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title">Suite 300</div>
+    <div class="accent"></div>
+  </div>
+  <div class="wrap auto-scroll">
+    <div class="scroll-inner">
+      <div class="grid">
+        <div class="group"><div class="group-header">A</div><ul>
+<li>Abrams, Jeri L.</li>
+<li>Aiello, John A.</li>
+<li>Anderson, J. Scott</li>
+<li>Anderson, Kurt E.</li>
+<li>Andrews, James M.</li>
+</ul></div>
+<div class="group"><div class="group-header">B</div><ul>
+<li>Bakhet, Evan X.</li>
+<li>Bandazian, Khoren</li>
+<li>Becker, Jay S.</li>
+<li>Bennett, Peter B.</li>
+<li>Berry, Bernard J. Jr.</li>
+<li>Bick, Catherine J.</li>
+<li>Bruno, Michael A.</li>
+<li>Burd, Ari G.</li>
+</ul></div>
+<div class="group"><div class="group-header">C</div><ul>
+<li>Campbell, Jr., Donald F.</li>
+<li>Canning, Michael J.</li>
+<li>Ceres, Monica</li>
+<li>Christian, Elizabeth H.</li>
+<li>Ciesla, Frank R.</li>
+<li>Clark, Bryce</li>
+<li>Colella, Paul T.</li>
+<li>Convery, Patrick S.</li>
+<li>Corliss, Chiara</li>
+<li>Corodemus, Steven J.</li>
+</ul></div>
+<div class="group"><div class="group-header">D</div><ul>
+<li>Dalton, Steven M.</li>
+<li>DeHaut, Timothy J.</li>
+<li>Delaney, Mary</li>
+<li>Dengler, Timothy J.</li>
+<li>D’Arcy, James R.</li>
+</ul></div>
+<div class="group"><div class="group-header">F</div><ul>
+<li>Fee, Chase</li>
+<li>Feinberg, Martin J.</li>
+<li>Fiorovanti, Matthew N.</li>
+<li>Forlenza, Philip D.</li>
+</ul></div>
+<div class="group"><div class="group-header">G</div><ul>
+<li>Gaughran, Robert J.</li>
+<li>Giunco, John A.</li>
+<li>Goldenberg, Steven S.</li>
+<li>Gouin, Steven P.</li>
+<li>Greene, Todd D.</li>
+<li>Gross, Michael J.</li>
+<li>Guastella, Peter J.</li>
+</ul></div>
+<div class="group"><div class="group-header">H</div><ul>
+<li>Healy, Christopher B.</li>
+</ul></div>
+<div class="group"><div class="group-header">K</div><ul>
+<li>Kurc, Dawn M.</li>
+</ul></div>
+<div class="group"><div class="group-header">L</div><ul>
+<li>Lally, Gerald P.</li>
+<li>Lee, Linda M.</li>
+</ul></div>
+<div class="group"><div class="group-header">M</div><ul>
+<li>Maillet, Jillaine J.</li>
+<li>Marino, Christopher J.</li>
+<li>McCarthy, C. Justin</li>
+<li>Michael, Julia</li>
+<li>Miller, David J.</li>
+<li>Minnefor, Paul E.</li>
+</ul></div>
+<div class="group"><div class="group-header">P</div><ul>
+<li>Pattwell, Reghan</li>
+<li>Policastro, Marc D.</li>
+<li>Popola, Gianna</li>
+</ul></div>
+<div class="group"><div class="group-header">R</div><ul>
+<li>Recchia, Anthony J.</li>
+<li>Regan, Sean E.</li>
+<li>Rollo, Nicholas M.</li>
+</ul></div>
+<div class="group"><div class="group-header">S</div><ul>
+<li>Sarto, John A.</li>
+<li>Schneider, Paul H.</li>
+<li>Schoepfer, Brian S.</li>
+<li>Schroeder, Courtney G.</li>
+<li>Shemesh, Brian J.</li>
+<li>Sikora, John L.</li>
+<li>Sisco, Donna A.</li>
+<li>Skrocki, Melissa V.</li>
+<li>Solan, Adam</li>
+</ul></div>
+<div class="group"><div class="group-header">T</div><ul>
+<li>Tuzzio, Robert J.</li>
+</ul></div>
+<div class="group"><div class="group-header">V</div><ul>
+<li>Vitiello, Michael J.</li>
+</ul></div>
+<div class="group"><div class="group-header">W</div><ul>
+<li>Ward, Steven W.</li>
+<li>Weisburg, Ben</li>
+</ul></div>
+<div class="group"><div class="group-header">Z</div><ul>
+<li>Zimmerman, Evan P.</li>
+</ul></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
