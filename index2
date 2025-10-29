@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lincroft Office Tower Directory</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, Helvetica, sans-serif;
+      background: #f9fafc;
+      color: #1c1c1c;
+      overflow: hidden;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+    }
+    .left, .right {
+      flex: 1;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+    .left {
+      border-right: 2px solid #2b88ff;
+      background: linear-gradient(180deg, #ffffff 0%, #f0f3f7 100%);
+      box-shadow: inset -10px 0 20px rgba(0,0,0,0.05);
+    }
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      font-weight: 800;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      color: #1c1c1c;
+    }
+    .accent {
+      width: 160px;
+      height: 6px;
+      border-radius: 6px;
+      background: #2b88ff;
+      box-shadow: 0 0 12px rgba(43,136,255,0.5);
+      margin: 0 auto 30px;
+    }
+    .tenant-list {
+      font-size: 26px;
+      line-height: 1.8;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .tenant-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      border-bottom: 1px dashed rgba(0,0,0,0.1);
+    }
+    .tenant-row:last-child {
+      border-bottom: none;
+    }
+    .suite {
+      color: #2b88ff;
+      font-weight: 700;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      background: #ffffff;
+    }
+    .right h2 {
+      font-size: 42px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0 0 20px;
+      text-align: center;
+      color: #1c1c1c;
+    }
+    .scroll-area {
+      height: calc(100% - 100px);
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    .scroll-inner {
+      position: absolute;
+      width: 100%;
+      animation: scrollY 45s linear infinite;
+    }
+    @keyframes scrollY {
+      0% { transform: translateY(0%); }
+      50% { transform: translateY(-20%); }
+      100% { transform: translateY(0%); }
+    }
+    ul {
+      list-style: none;
+      padding: 0 10%;
+      margin: 0;
+      column-count: 2;
+      column-gap: 40px;
+    }
+    ul li {
+      font-size: 24px;
+      padding: 6px 0;
+      border-bottom: 1px dashed rgba(0,0,0,0.08);
+    }
+    ul li:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Welcome to<br>Lincroft Office Tower</h1>
+      <div class="accent"></div>
+      <div class="tenant-list">
+        <div class="tenant-row"><div>Wilentz, Goldman & Spitzer</div><div class="suite">Suite 100</div></div>
+        <div class="tenant-row"><div>Fox & Roach</div><div class="suite">Suite 101</div></div>
+        <div class="tenant-row"><div>Osaic</div><div class="suite">Suite 102</div></div>
+        <div class="tenant-row"><div>Consolidated Affiliates</div><div class="suite">Suite 103</div></div>
+        <div class="tenant-row"><div>Benjamin F. Edwards</div><div class="suite">Suite 104</div></div>
+        <div class="tenant-row"><div>Hawkeye Search Group</div><div class="suite">Suite 105</div></div>
+        <div class="tenant-row"><div>Select Advisors Wealth Management</div><div class="suite">Suite 107</div></div>
+        <div class="tenant-row"><div>Merlin Law Group</div><div class="suite">Suite 110</div></div>
+        <div class="tenant-row"><div>Regus</div><div class="suite">Suite 200</div></div>
+        <div class="tenant-row"><div>ISS Stoxx</div><div class="suite">Suite 201</div></div>
+        <div class="tenant-row"><div>Bohler Engineering</div><div class="suite">Suite 207</div></div>
+        <div class="tenant-row"><div>Giordano, Halleran & Ciesla</div><div class="suite">Suite 300</div></div>
+      </div>
+    </div>
+    <div class="right">
+      <h2>Suite 300 Directory</h2>
+      <div class="scroll-area">
+        <div class="scroll-inner">
+          <ul>
+            <li>Abrams, Jeri L.</li><li>Aiello, John A.</li><li>Anderson, J. Scott</li><li>Anderson, Kurt E.</li><li>Andrews, James M.</li><li>Bakhet, Evan X.</li><li>Bandazian, Khoren</li><li>Becker, Jay S.</li><li>Bennett, Peter B.</li><li>Berry, Bernard J. Jr.</li><li>Bick, Catherine J.</li><li>Bruno, Michael A.</li><li>Burd, Ari G.</li><li>Campbell, Jr., Donald F.</li><li>Canning, Michael J.</li><li>Ceres, Monica</li><li>Christian, Elizabeth H.</li><li>Ciesla, Frank R.</li><li>Clark, Bryce</li><li>Colella, Paul T.</li><li>Convery, Patrick S.</li><li>Corliss, Chiara</li><li>Corodemus, Steven J.</li><li>D’Arcy, James R.</li><li>Dalton, Steven M.</li><li>DeHaut, Timothy J.</li><li>Delaney, Mary</li><li>Dengler, Timothy J.</li><li>Fee, Chase</li><li>Feinberg, Martin J.</li><li>Fiorovanti, Matthew N.</li><li>Forlenza, Philip D.</li><li>Gaughran, Robert J.</li><li>Giunco, John A.</li><li>Goldenberg, Steven S.</li><li>Gouin, Steven P.</li><li>Greene, Todd D.</li><li>Gross, Michael J.</li><li>Guastella, Peter J.</li><li>Healy, Christopher B.</li><li>Kurc, Dawn M.</li><li>Lally, Gerald P.</li><li>Lee, Linda M.</li><li>Maillet, Jillaine J.</li><li>Marino, Christopher J.</li><li>McCarthy, C. Justin</li><li>Michael, Julia</li><li>Miller, David J.</li><li>Minnefor, Paul E.</li><li>Pattwell, Reghan</li><li>Policastro, Marc D.</li><li>Popola, Gianna</li><li>Recchia, Anthony J.</li><li>Regan, Sean E.</li><li>Rollo, Nicholas M.</li><li>Sarto, John A.</li><li>Schneider, Paul H.</li><li>Schoepfer, Brian S.</li><li>Schroeder, Courtney G.</li><li>Shemesh, Brian J.</li><li>Sikora, John L.</li><li>Sisco, Donna A.</li><li>Skrocki, Melissa V.</li><li>Solan, Adam</li><li>Tuzzio, Robert J.</li><li>Vitiello, Michael J.</li><li>Ward, Steven W.</li><li>Weisburg, Ben</li><li>Zimmerman, Evan P.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
